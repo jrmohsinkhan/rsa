@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="crypto.min.js"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="gen">
+        <h2>Encryption Page</h2>
+        <div class="container">
+            <form action="decryption.html" method="GET">
+                <label for="Public key">Public Key</label>
+                <input type="text" id="Public key" name="Public key">
+                <br><br>
+                <label for="plain-text">Plain Text</label>
+                <textarea id="plain-text" rows="2" required></textarea>
+                <br><br>
+                <label for="cipher-text">Cipher Text</label>
+                <textarea id="cipher-text" rows="2" name="cipher-text"></textarea>
+                <br><br>
+                <input type="hidden" id="Private key" name="Private key">
+                <input type="hidden" id="encrypted" name="encrypted">
+                <button type="button" onclick="encryptText()">Encrypt</button>
+                <button type="submit" id="nav-link">Decryption Page</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

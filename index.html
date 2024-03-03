@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Key</title>
+    <script src="crypto.min.js"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="gen">
+        <h2>Generate Key</h2>
+        <div class="container">
+            <form action="encryption.html" method="GET">
+                <label for="Public key">Public Key</label>
+                <input type="text" id="Public key" name="Public key" required>
+                <br><br><br>
+                <label for="Private key">Private Key</label>
+                <input type="text" id="Private key" name="Private key" required>
+                <br><br><br>
+                <button type="button" onclick="generateKeys()">Generate Keys</button>
+                <button type="submit" id="nav-link">Encryption Page</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
